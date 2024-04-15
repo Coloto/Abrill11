@@ -24,7 +24,8 @@ public class AccesoEmpleado extends Conexion{
                     rs.getString("first_name"),
                     rs.getString("last_name"),
                     rs.getString("title"),
-                    rs.getString("address")));
+                    rs.getString("address"),
+                    rs.getString("city")));
         }
         return empleados;
     }
@@ -85,7 +86,8 @@ public class AccesoEmpleado extends Conexion{
             String apellido = rs.getString("last_name");
             String puesto = rs.getString("title");
             String direccion = rs.getString("address");
-            return new Empleado(id, nombre, apellido, puesto, direccion);
+            String ciudad = rs.getString("city");
+            return new Empleado(id, nombre, apellido, puesto, direccion, ciudad);
         }
         return null;
     }

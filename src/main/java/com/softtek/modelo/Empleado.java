@@ -15,15 +15,17 @@ public class Empleado {
     private String apellido;
     private String puesto;
     private String direccion;
+    private String ciudad;
 
     @Override
     public String toString() {
-        return "\nEmpleado{" +
+        return "Empleado{" +
                 "idEmpleado=" + idEmpleado +
                 ", nombre='" + nombre + '\'' +
                 ", apellido='" + apellido + '\'' +
                 ", puesto='" + puesto + '\'' +
                 ", direccion='" + direccion + '\'' +
+                ", ciudad='" + ciudad + '\'' +
                 '}';
     }
 }

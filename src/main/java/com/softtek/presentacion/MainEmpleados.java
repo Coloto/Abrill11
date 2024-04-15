@@ -3,7 +3,6 @@ package com.softtek.presentacion;
 import com.softtek.persistencia.AccesoEmpleado;
 
 import java.sql.SQLException;
-import java.time.LocalDate;
 
 public class MainEmpleados {
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
